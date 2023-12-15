@@ -16,6 +16,7 @@ def respond_to_whatsapp():
     print(user_phone)
     response=(process_request.process(str(incoming_message),str(user_phone)))
     sender.send_whatsapp_message(user_phone,response)
+    return "ok"
 
 
 

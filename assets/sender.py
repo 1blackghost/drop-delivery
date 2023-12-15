@@ -4,7 +4,7 @@ from twilio.rest import Client
 def send_whatsapp_message(to_number, message_body):
     # Replace these with your actual Twilio credentials
     account_sid = 'AC356901ac8afcb9ffe13bfd6fcfd3e4fc'
-    auth_token = '1aad4829b8c170fcc51aaf9b19978c87'
+    auth_token = '3d447ce1d48b02638eb7b7444266af4f'
 
     client = Client(account_sid, auth_token)
 
