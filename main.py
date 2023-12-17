@@ -1,9 +1,10 @@
-from flask import Flask, request
+from flask import Flask, request,session
 from assets import sender,process_request
 from twilio.twiml.messaging_response import MessagingResponse #not used converts to xml
 from twilio.rest import Client
 
 app = Flask(__name__)
+app.secrect_key="342354"
 
 
 @app.route('/', methods=["POST","GET"])

@@ -7,7 +7,7 @@ def send_whatsapp_message(to_number, message_body):
     auth_token = '3d447ce1d48b02638eb7b7444266af4f'
 
     client = Client(account_sid, auth_token)
-
+    print(message_body)
     try:
         message = client.messages.create(
             from_='whatsapp:+14155238886',  # Replace with your Twilio WhatsApp number
